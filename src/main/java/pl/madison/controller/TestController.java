@@ -59,11 +59,11 @@ public class TestController {
     @RequestMapping(value = "/add", method = RequestMethod.PUT)
     public String add(@RequestParam("surfaceInDegrees") String surfaceInDegrees,
                          @RequestParam("name") String name, @RequestParam("theBrighestStar") String theBrighestStar){
-        Constellation consTemp = new Constellation();
-        consTemp.setSurfaceInDegrees(surfaceInDegrees);
-        consTemp.setTheBrighestStar(theBrighestStar);
-        consTemp.setName(name);
-        constellationDao.save(consTemp);
+//        Constellation consTemp = new Constellation();
+//        consTemp.setSurfaceInDegrees(surfaceInDegrees);
+//        consTemp.setTheBrighestStar(theBrighestStar);
+//        consTemp.setName(name);
+//        constellationDao.save(consTemp);
 
         return "mission has been completed:)";
     }
